@@ -1,0 +1,112 @@
+$fontZise: 24px;
+$fontSizeMobile: 16px;
+$fontColor: #8b8d8e;
+$textAlign: center;
+
+.spinner {
+	position: absolute;
+	@media only screen and (max-width: 600px) {
+		top: 40%;
+		left: 25%;
+		right: 25%;
+		bottom: 40%;
+	}
+
+	@media only screen and (min-width: 600px) {
+		top: 40%;
+		left: 25%;
+		right: 25%;
+		bottom: 40%;
+	}
+
+	@media only screen and (min-width: 768px) {
+		top: 45%;
+		left: 35%;
+		right: 35%;
+		bottom: 45%;
+	}
+
+	@media only screen and (min-width: 992px) {
+		top: 45%;
+		left: 35%;
+		right: 35%;
+		bottom: 45%;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		top: 45%;
+		left: 35%;
+		right: 35%;
+		bottom: 45%;
+	}
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	img {
+		width: 130px;
+		height: 130px;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		color: $fontColor;
+		font-weight: bold;
+		text-align: $textAlign;
+
+		@media only screen and (max-width: 600px) {
+			font-size: $fontSizeMobile;
+		}
+
+		@media only screen and (min-width: 600px) {
+			font-size: $fontSizeMobile;
+		}
+
+		@media only screen and (min-width: 768px) {
+			font-size: $fontZise;
+		}
+
+		@media only screen and (min-width: 992px) {
+			font-size: $fontZise;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			font-size: $fontZise;
+		}
+	}
+
+	&__description {
+		color: $fontColor;
+		text-align: $textAlign;
+
+		@media only screen and (max-width: 600px) {
+			font-size: $fontSizeMobile;
+		}
+
+		@media only screen and (min-width: 600px) {
+			font-size: $fontSizeMobile;
+		}
+
+		@media only screen and (min-width: 768px) {
+			font-size: $fontZise;
+		}
+
+		@media only screen and (min-width: 992px) {
+			font-size: $fontZise;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			font-size: $fontZise;
+		}
+	}
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

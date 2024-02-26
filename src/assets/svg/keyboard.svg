@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12">
+  <g id="ic_documento" transform="translate(0.5 0.5)">
+    <path id="Stroke_1" data-name="Stroke 1" d="M0,10a1,1,0,0,0,1,1H19a1,1,0,0,0,1-1V1a1,1,0,0,0-1-1H1A1,1,0,0,0,0,1Z" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+    <rect id="Rectangle_4_Copy" data-name="Rectangle 4 Copy" width="4" height="4" transform="translate(2 1)" fill="#d8d8d8"/>
+    <rect id="Rectangle_9_Copy_3" data-name="Rectangle 9 Copy 3" width="16" height="1" transform="translate(2 6)" fill="#d8d8d8"/>
+    <rect id="Rectangle_9_Copy_4" data-name="Rectangle 9 Copy 4" width="7" height="2" transform="translate(11 1)" fill="#d8d8d8"/>
+    <rect id="Rectangle_9_Copy_5" data-name="Rectangle 9 Copy 5" width="16" height="1" transform="translate(2 8)" fill="#d8d8d8"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+.custom-checkbox {
+  width: 100%;
+
+  &--label {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &--button {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 12px;
+  }
+
+  &--button-checked {
+    background-color: rgba(10, 5, 30, 1);
+    background-image: url("../../../assets/images/checkbox-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--button-unchecked {
+    border: 1px solid rgba(10, 5, 30, 1);
+    background: none;
+  }
+}
+
+.custom-checkbox > label > input[type="checkbox"] {
+  visibility: hidden;
+  width: 0px;
+}

@@ -1,0 +1,11 @@
+.custom-link{
+  width: 100%;
+
+  > a {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+  color: rgba(3, 5, 15, 1);
+  text-decoration: underline;
+  }
+}

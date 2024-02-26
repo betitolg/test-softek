@@ -1,0 +1,59 @@
+.text {
+  margin: 0px;
+}
+
+.text-weight {
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--normal {
+    font-weight: 600;
+  }
+
+  &--thin {
+    font-weight: 400;
+  }
+}
+
+.text-size {
+  &--small {
+    font-size: 12px;
+  }
+
+  &--medium {
+    font-size: 14px;
+  }
+
+  &--regular {
+    font-size: 16px;
+  }
+
+  &--regular-high {
+    font-size: 18px;
+  }
+
+  &--high {
+    font-size: 20px;
+  }
+
+  &--bigger {
+    font-size: 32px;
+  }
+}
+
+.text-color {
+  &--primary {
+    color: rgba(3, 5, 15, 1);
+  }
+  &--gray {
+    color: rgba(94, 100, 136, 1);
+  }
+  &--white {
+    color: rgba(255, 255, 255, 1);
+  }
+  &--secondary {
+    color: rgba(10, 5, 30, 1);
+  }
+}

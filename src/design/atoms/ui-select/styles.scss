@@ -1,0 +1,16 @@
+.custom-select {
+  outline: none;
+  background: none;
+  color: rgba(3, 5, 15, 1);
+  width: 100%;
+  border: none;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../../assets/images/arrow_down.png"); /* Agrega la ruta a tu icono personalizado */
+  background-size: 15px; /* Ajusta el tamaño de tu icono según sea necesario */
+  background-repeat: no-repeat;
+  background-position: right center; /* Posición del icono, puede ajustarse según necesites */
+  padding-right: 20px; 
+}
