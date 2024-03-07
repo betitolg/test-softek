@@ -45,11 +45,10 @@ const CheckBoxComponent = ({
           }`}
         />
         <TextComponent
-          text={label}
           textColor="secondary"
           textSize="small"
           textWeight="thin"
-        />
+        >{label}</TextComponent>
       </label>
     </div>
   );

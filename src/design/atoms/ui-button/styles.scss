@@ -1,8 +1,22 @@
 .custom-button {
-  border-radius: 40px;
-  padding: 20px 40px 20px 40px;
-  color: rgba(255, 255, 255, 1);
-  font-size: 20px;
-  line-height: 24px;
   font-weight: 700;
+  cursor: pointer;
+
+  &--primary {
+    background-color: rgba(255, 28, 68, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 32px;
+    padding: 14px 32px 14px 32px;
+    font-size: 18px;
+    line-height: 20px;
+    border: none;
+  }
+  &--default {
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 40px;
+    padding: 20px 40px 20px 40px;
+    background-color: rgba(3, 5, 15, 1);
+    color: rgba(255, 255, 255, 1);
+  }
 }

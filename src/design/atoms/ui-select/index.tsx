@@ -16,7 +16,7 @@ const SelectComponent: React.FC<Props> = (props: Props) => {
   return (
     <select className="custom-select" name="select">
       {values.map((val) => (
-        <option selected={selected === val.value} value={val.value}>
+        <option key={val.value} defaultValue={selected} value={val.value}>
           {val.label}
         </option>
       ))}

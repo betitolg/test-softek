@@ -2,15 +2,32 @@ import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import React, { Suspense } from "react";
 import Loading from "design/atoms/loading/index";
 import Home from "@presentation/softek/pages/home";
+import Planes from "@presentation/softek/pages/planes";
+import { PlanesProvider } from "@presentation/context/planes/planes.provider";
+import { authFactory } from "@integration/main/factories/authentication/auth-factory";
+import { plansFactory } from "@integration/main/factories/plans/plans-factory";
 
 const AppRoutes: React.FC = () => (
   <HashRouter>
     <Suspense fallback={<Loading />}>
-      <Routes>
-        {/* <Route path="*" element={<Navigate to="/error/auth" />} /> */}
-        <Route path="/home" element={<Home />} />
-        {/* <Route path={"/error/:type"} element={<ErrorComponent />} /> */}
-      </Routes>
+      <PlanesProvider>
+        <Routes>
+          {/* <Route path="*" element={<Navigate to="/error/auth" />} /> */}
+          <Route
+            path="/home"
+            element={
+              <Home
+                repository={authFactory}
+                plansRepository={plansFactory}
+              />
+            }
+          />
+
+          <Route path="/planes" element={<Planes />} />
+
+          {/* <Route path={"/error/:type"} element={<ErrorComponent />} /> */}
+        </Routes>
+      </PlanesProvider>
     </Suspense>
   </HashRouter>
 );

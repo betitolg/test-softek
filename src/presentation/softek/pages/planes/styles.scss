@@ -1,0 +1,110 @@
+.planes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &--back-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+    @media only screen and (max-width: 600px) {
+      width: auto;
+    }
+  }
+
+  &--back-content {
+    width: 100%;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &--container {
+    max-width: 1200px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media only screen and (max-width: 1250px) {
+      min-width: auto;
+    }
+
+    @media only screen and (max-width: 950px) {
+      padding: 0px;
+    }
+  }
+
+  &--result {
+    width: 100%;
+  }
+
+  &--quote {
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: 600px) {
+      width: auto;
+    }
+
+    &-content {
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+
+      @media only screen and (max-width: 600px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &--quote-cards {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 750px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &--quote-bigger-cards {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &--result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card-list {
+  padding: 0px 0px 0px 18px;
+
+  > li {
+    text-decoration: dotted;
+    color: rgba(20, 25, 56, 1);
+    margin-bottom: 24px;
+  }
+}

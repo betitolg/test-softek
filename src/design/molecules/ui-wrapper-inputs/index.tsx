@@ -27,7 +27,9 @@ const WrapperInputs: React.FC<Props> = (props: Props) => {
       <div className="wrapper-inputs--content">
         {singleInput ? (
           <div className="wrapper-inputs--content-single">
-            <TextComponent text="Celular" textColor="gray" textSize="small" />
+            <TextComponent textColor="gray" textSize="small">
+              {"Celular"}
+            </TextComponent>
             <InputComponent
               onChange={handlePhoneNumber}
               value={phoneNumber}
@@ -50,10 +52,9 @@ const WrapperInputs: React.FC<Props> = (props: Props) => {
             </div>
             <div className="wrapper-inputs--content-right">
               <TextComponent
-                text="Nro. de documento"
                 textColor="gray"
                 textSize="small"
-              />
+              >{"Nro. de documento"}</TextComponent>
               <InputComponent
                 onChange={handleDocumentNumber}
                 value={documentNumber}

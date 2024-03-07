@@ -1,0 +1,16 @@
+.step-separator {
+  width: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &--element {
+    width: 5px;
+    height: 3px;
+    background-color: rgb(79, 79, 255);
+    border: 2px;
+  }
+}

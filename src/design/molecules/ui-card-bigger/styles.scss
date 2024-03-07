@@ -1,0 +1,38 @@
+.card-bigger {
+  width: 224px;
+  border-radius: 24px;
+  padding: 68px 32px 48px 32px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 32px 0px rgba(174, 172, 243, 0.35);
+  margin-right: 32px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  
+
+  &--header {
+    width: 100%;
+
+    &-add-margin {
+      margin-bottom: 43px;
+    }
+    &-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.card-bigger:last-child {
+  margin-right: 0px;
+}

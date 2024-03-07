@@ -1,0 +1,45 @@
+.step {
+  display: flex;
+
+  &--circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 16px;
+    font-size: 12px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &-default {
+      background-color: none;
+      border: 1px solid rgba(121, 129, 178, 1);
+      color: rgba(121, 129, 178, 1);
+    }
+
+    &-selected {
+      background-color: rgba(79, 79, 255, 1);
+      border: none;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &--title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0px;
+
+    &-selected {
+      color: rgba(20, 25, 56, 1);
+    }
+
+    &-default {
+      color: rgba(121, 129, 178, 1);
+    }
+  }
+
+}

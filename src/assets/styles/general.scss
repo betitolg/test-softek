@@ -21,3 +21,34 @@
 .mr-8 {
   margin-right: 8px !important;
 }
+
+.mt-11 {
+  margin-top: 11px !important;
+}
+
+.mt-24 {
+  margin-top: 24px !important;
+}
+
+.flex-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-start {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.flex-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-align-left {
+  text-align: left;
+}

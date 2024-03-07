@@ -1,0 +1,13 @@
+.progress-bar {
+  width: 212px;
+  height: 6px;
+  border-radius: 20px;
+  background-color: rgba(215, 219, 245, 1);
+
+  &--advance {
+    width: auto;
+    height: 6px;
+    border-radius: 20px;
+    background-color: rgba(79, 79, 255, 1);
+  }
+}

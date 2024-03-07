@@ -18,6 +18,9 @@
 }
 
 .text-size {
+  &--smaller {
+    font-size: 10px;
+  }
   &--small {
     font-size: 12px;
   }
@@ -38,8 +41,20 @@
     font-size: 20px;
   }
 
+  &--middle-high {
+    font-size: 24px;
+  }
+  
   &--bigger {
     font-size: 32px;
+  }
+
+  &--max-bigger {
+    font-size: 40px;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 28px;
+    }
   }
 }
 
@@ -50,10 +65,16 @@
   &--gray {
     color: rgba(94, 100, 136, 1);
   }
+  &--gray-200 {
+    color: rgba(121, 129, 178, 1);
+  }
   &--white {
     color: rgba(255, 255, 255, 1);
   }
   &--secondary {
     color: rgba(10, 5, 30, 1);
+  }
+  &--black {
+    color: rgba(20, 25, 56, 1);
   }
 }
