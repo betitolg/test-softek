@@ -20,15 +20,15 @@ interface FormUser {
 const validationsForm = yup
 .object<FormUser>()
 .shape({
-  documentTypeNumber:yup.string().required("Dato requerido"),
-  documentNumber: yup.string().required("Dato requerido").when("documentTypeNumber", (document) => {
+  documentTypeNumber:yup.string().required(),
+  documentNumber: yup.string().required().when("documentTypeNumber", (document) => {
     if(document[0] === 'dni'){
-      return yup.number().typeError("Datos ingresados incorrectos")
+      return yup.number()
     }
     return yup.string()
   }),
-  phone: yup.string().required("Dato requerido").typeError("Datos ingresados incorrectos"),
-  politicaPrivacidad: yup.bool().required("Dato requerido"),
+  phone: yup.string().required(),
+  politicaPrivacidad: yup.bool().required(),
   politicaComunicaciones: yup.bool()
 })
 
