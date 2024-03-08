@@ -1,65 +1,39 @@
 import React, { useState } from "react";
-import SelectComponent from "@design/atoms/ui-select";
 import TextComponent from "@design/atoms/ui-text";
 import InputComponent from "@design/atoms/ui-input";
 import "./styles.scss";
+import { Controller } from "react-hook-form";
 
 interface Props {
-  singleInput: boolean;
   classParam?: string;
+  children: React.ReactNode
 }
 
 const WrapperInputs: React.FC<Props> = (props: Props) => {
-  const { singleInput, classParam = "" } = props;
-  const [documentNumber, setDocumentNumber] = useState<string>("");
-  const [phoneNumber, setPhoneNumber] = useState<string>("");
-
-  const handleDocumentNumber = (value: string) => {
-    setDocumentNumber(value);
-  };
-
-  const handlePhoneNumber = (value: string) => {
-    setPhoneNumber(value);
-  };
+  const { classParam = "", children } = props;
+  const childrenArray = React.Children.toArray(children);
 
   return (
     <div className={`wrapper-inputs ${classParam}`}>
       <div className="wrapper-inputs--content">
-        {singleInput ? (
+        { childrenArray.length === 1? (
           <div className="wrapper-inputs--content-single">
             <TextComponent textColor="gray" textSize="small">
               {"Celular"}
             </TextComponent>
-            <InputComponent
-              onChange={handlePhoneNumber}
-              value={phoneNumber}
-              placeholder="Ingrese su celular"
-            />
+            {childrenArray[0]}
           </div>
         ) : (
           <>
             <div className="wrapper-inputs--content-left">
-              <SelectComponent
-                values={[
-                  {
-                    value: "dni",
-                    label: "DNI",
-                  },
-                  { value: "ce", label: "CE" },
-                ]}
-                selected=""
-              />
+              {childrenArray[0]}
             </div>
             <div className="wrapper-inputs--content-right">
               <TextComponent
                 textColor="gray"
                 textSize="small"
               >{"Nro. de documento"}</TextComponent>
-              <InputComponent
-                onChange={handleDocumentNumber}
-                value={documentNumber}
-                placeholder="Ingrese sus datos"
-              />
+              {childrenArray[1]}
             </div>
           </>
         )}

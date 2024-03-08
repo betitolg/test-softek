@@ -10,6 +10,7 @@ type Props = {
   onchange: (value: boolean) => void;
   label: string;
   classParam?: string;
+  fieldName: string;
 };
 
 const CheckBoxComponent = ({
@@ -20,22 +21,16 @@ const CheckBoxComponent = ({
   onchange = () => {},
   label = "",
   classParam = "",
+  fieldName = "",
 }: Props) => {
+  const handleOnChange = () => {
+    console.log('checked change ', checked)
+    onchange(!checked)
+  }
   return (
     <div className={`custom-checkbox ${classParam}`}>
-      <label className="custom-checkbox--label">
-        <input
-          type="checkbox"
-          id={id}
-          required={required}
-          disabled={disabled}
-          checked={checked}
-          onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
-            onchange(event.target.checked)
-          }
-        />
-        <div
-          onClick={() => onchange(!checked)}
+      <div
+          onClick={handleOnChange}
           role="button"
           tabIndex={0}
           className={`custom-checkbox--button ${
@@ -43,6 +38,17 @@ const CheckBoxComponent = ({
               ? "custom-checkbox--button-checked"
               : "custom-checkbox--button-unchecked"
           }`}
+        />
+      <label className="custom-checkbox--label">
+        <input
+          type="checkbox"
+          id={id}
+          disabled={disabled}
+          checked={checked}
+          name={fieldName}
+          onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+            onchange(event.target.checked)
+          }
         />
         <TextComponent
           textColor="secondary"

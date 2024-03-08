@@ -19,4 +19,9 @@
     background-color: rgba(3, 5, 15, 1);
     color: rgba(255, 255, 255, 1);
   }
+
+  &--disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
 }

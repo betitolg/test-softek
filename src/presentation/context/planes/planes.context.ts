@@ -1,3 +1,5 @@
+import { Authentication } from "@domains/softtek/authentication/models/authentication.model";
+import { PlansModel } from "@domains/softtek/plans/models/plans-model";
 import React from "react";
 
 type PlanesContextType = {
@@ -8,6 +10,10 @@ type PlanesContextType = {
   setStepSelected: (step: number) => void;
   page: number;
   setPage: (page: number) => void;
+  userInfo: Authentication | null;
+  setUserInfo: (value: Authentication) => void
+  userInfoPlans: PlansModel[] | null;
+  setUserInfoPlans: (value: PlansModel[]) => void
 };
 
 export const PlanesContext = React.createContext<PlanesContextType>({
@@ -18,4 +24,8 @@ export const PlanesContext = React.createContext<PlanesContextType>({
   setStepSelected: () => null,
   page: 1,
   setPage: () => null,
+  userInfo: null,
+  setUserInfo: () => {},
+  userInfoPlans: null,
+  setUserInfoPlans: () => {}
 });

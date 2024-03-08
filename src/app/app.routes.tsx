@@ -4,8 +4,8 @@ import Loading from "design/atoms/loading/index";
 import Home from "@presentation/softek/pages/home";
 import Planes from "@presentation/softek/pages/planes";
 import { PlanesProvider } from "@presentation/context/planes/planes.provider";
-import { authFactory } from "@integration/main/factories/authentication/auth-factory";
-import { plansFactory } from "@integration/main/factories/plans/plans-factory";
+import { AuthFactory } from "@integration/main/factories/authentication/auth-factory";
+import { PlansFactory } from "@integration/main/factories/plans/plans-factory";
 
 const AppRoutes: React.FC = () => (
   <HashRouter>
@@ -17,8 +17,8 @@ const AppRoutes: React.FC = () => (
             path="/home"
             element={
               <Home
-                repository={authFactory}
-                plansRepository={plansFactory}
+                repository={AuthFactory}
+                plansRepository={PlansFactory}
               />
             }
           />

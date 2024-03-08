@@ -3,7 +3,7 @@ import { AuthMapping } from "@domains/softtek/authentication/mappings/auth-mappi
 import { AuthenticationHttpService } from "../../../infra/http-services/authentication/authentication-http-services";
 import { httpClient } from "../http/http-factory";
 
-export const authFactory: AuthCase = new AuthCase(
+export const AuthFactory: AuthCase = new AuthCase(
   new AuthenticationHttpService(httpClient),
   new AuthMapping()
 );
