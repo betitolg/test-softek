@@ -1,5 +1,5 @@
 import React from "react";
-import ArrowBackImage from "@assets/images/arrow_back.png";
+import ArrowBackImage from "assets/images/arrow_back.png";
 import "./styles.scss";
 
 interface Props {

@@ -1,6 +1,6 @@
 import { AjaxError } from "rxjs/ajax";
-import { HttpError } from "@integration/infra/http/errors/http-error";
-import { HttpStatusCode } from "@integration/infra/http/http-client";
+import { HttpError } from "integration/infra/http/errors/http-error";
+import { HttpStatusCode } from "integration/infra/http/http-client";
 
 class CustomError {
   static getError = (error: AjaxError) => {

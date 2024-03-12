@@ -1,11 +1,11 @@
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import React, { Suspense } from "react";
 import Loading from "design/atoms/loading/index";
-import Home from "@presentation/softek/pages/home";
-import Planes from "@presentation/softek/pages/planes";
-import { PlanesProvider } from "@presentation/context/planes/planes.provider";
-import { AuthFactory } from "@integration/main/factories/authentication/auth-factory";
-import { PlansFactory } from "@integration/main/factories/plans/plans-factory";
+import Home from "presentation/softek/pages/home";
+import Planes from "presentation/softek/pages/planes";
+import { PlanesProvider } from "presentation/context/planes/planes.provider";
+import { AuthFactory } from "integration/main/factories/authentication/auth-factory";
+import { PlansFactory } from "integration/main/factories/plans/plans-factory";
 
 const AppRoutes: React.FC = () => (
   <HashRouter>

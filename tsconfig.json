@@ -9,25 +9,17 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "ES2020",
+    "moduleResolution": "Node16",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
       "jsx": "react-jsx",
       "baseUrl": "./src",
     "noImplicitAny": false,
-    "paths": {
-      "@domains/*": ["domains/*"],
-      "@presentation/*": ["presentation/*"],
-      "@assets/*": ["assets/*"],
-      "@design/*":["design/*"],
-      "@integration/*": ["integration/*"]
-    },
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "typeRoots": ["/node_modules/@types", "/**/**/types"]
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["./src", ".decs.d.ts", "types/*.d.ts"]
 }

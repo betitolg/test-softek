@@ -1,7 +1,7 @@
 import React from "react";
-import TextComponent from "@design/atoms/ui-text";
-import FamilyIcon from "@assets/svg/icon_family.svg";
-import SeparatorComponent from "@design/atoms/ui-separator";
+import TextComponent from "design/atoms/ui-text";
+import FamilyIcon from "assets/svg/icon_family.svg";
+import SeparatorComponent from "design/atoms/ui-separator";
 
 interface Props {
   name: string;

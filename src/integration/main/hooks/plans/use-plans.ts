@@ -1,4 +1,4 @@
-import { PlansRepository } from "@domains/softtek/plans/repositories/plans.repository";
+import { PlansRepository } from "domains/softtek/plans/repositories/plans.repository";
 import { useQuery } from "react-query";
 
 export const usePlans = (repository: PlansRepository) => {

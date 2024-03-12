@@ -1,4 +1,4 @@
-import { PlanesContext } from "@presentation/context/planes/planes.context";
+import { PlanesContext } from "presentation/context/planes/planes.context";
 import { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 

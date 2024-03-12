@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { PlanesContext } from "./planes.context";
-import { Authentication } from "@domains/softtek/authentication/models/authentication.model";
-import { PlansModel } from "@domains/softtek/plans/models/plans-model";
+import { Authentication } from "domains/softtek/authentication/models/authentication.model";
+import { PlansModel } from "domains/softtek/plans/models/plans-model";
 
 type Props = {
   children?: React.ReactChild;

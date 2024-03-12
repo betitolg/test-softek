@@ -13,7 +13,7 @@ type Props = {
   fieldName: string;
 };
 
-const CheckBoxComponent = ({
+const CheckBoxComponent: React.FC<Props> = ({
   id = "",
   disabled = false,
   required = false,
@@ -24,21 +24,21 @@ const CheckBoxComponent = ({
   fieldName = "",
 }: Props) => {
   const handleOnChange = () => {
-    console.log('checked change ', checked)
-    onchange(!checked)
-  }
+    console.log("checked change ", checked);
+    onchange(!checked);
+  };
   return (
     <div className={`custom-checkbox ${classParam}`}>
       <div
-          onClick={handleOnChange}
-          role="button"
-          tabIndex={0}
-          className={`custom-checkbox--button ${
-            checked
-              ? "custom-checkbox--button-checked"
-              : "custom-checkbox--button-unchecked"
-          }`}
-        />
+        onClick={handleOnChange}
+        role="button"
+        tabIndex={0}
+        className={`custom-checkbox--button ${
+          checked
+            ? "custom-checkbox--button-checked"
+            : "custom-checkbox--button-unchecked"
+        }`}
+      />
       <label className="custom-checkbox--label">
         <input
           type="checkbox"
@@ -50,11 +50,9 @@ const CheckBoxComponent = ({
             onchange(event.target.checked)
           }
         />
-        <TextComponent
-          textColor="secondary"
-          textSize="small"
-          textWeight="thin"
-        >{label}</TextComponent>
+        <TextComponent textColor="secondary" textSize="small" textWeight="thin">
+          {label}
+        </TextComponent>
       </label>
     </div>
   );

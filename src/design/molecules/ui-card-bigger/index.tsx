@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
-import TextComponent from "@design/atoms/ui-text/index";
-import WrapperText from "@design/molecules/ui-wrapper-text";
-import SeparatorComponent from "@design/atoms/ui-separator";
+import TextComponent from "design/atoms/ui-text/index";
+import WrapperText from "design/molecules/ui-wrapper-text";
+import SeparatorComponent from "design/atoms/ui-separator";
 import "./styles.scss";
-import ButtonComponent from "@design/atoms/ui-button";
+import ButtonComponent from "design/atoms/ui-button";
 
 interface Props {
   imageUrl: string;

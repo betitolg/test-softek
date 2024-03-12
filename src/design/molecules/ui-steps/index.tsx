@@ -1,6 +1,6 @@
 import React from "react";
-import StepComponent from "@design/atoms/ui-step";
-import StepSeparatorComponent from "@design/atoms/step-separator";
+import StepComponent from "design/atoms/ui-step";
+import StepSeparatorComponent from "design/atoms/step-separator";
 import "./styles.scss";
 
 export type StepType = {

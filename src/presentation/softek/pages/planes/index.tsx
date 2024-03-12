@@ -1,16 +1,16 @@
 import React from "react";
-import Layout from "@design/layout/index";
+import Layout from "design/layout/index";
 import BackButtonComponent from "./components/back-button";
-import TextComponent from "@design/atoms/ui-text";
-import CardComponent from "@design/molecules/ui-card";
-import ImagePerson from "@assets/images/image_person_protect.png";
-import ImagePersonCroz from "@assets/images/image_person_croz.png";
-import CardBiggerComponent from "@design/molecules/ui-card-bigger";
-import ImageHome from "@assets/images/icon_home.png";
-import ImageClinic from "@assets/images/icon_clinic.png";
-import SliderComponent from "@design/molecules/ui-slider-card-bigger";
+import TextComponent from "design/atoms/ui-text";
+import CardComponent from "design/molecules/ui-card";
+import ImagePerson from "assets/images/image_person_protect.png";
+import ImagePersonCroz from "assets/images/image_person_croz.png";
+import CardBiggerComponent from "design/molecules/ui-card-bigger";
+import ImageHome from "assets/images/icon_home.png";
+import ImageClinic from "assets/images/icon_clinic.png";
+import SliderComponent from "design/molecules/ui-slider-card-bigger";
 import usePlanes from "./hooks/usePlanes";
-import CardLarge from "@design/molecules/ui-card/ui-card-large";
+import CardLarge from "design/molecules/ui-card/ui-card-large";
 import "./styles.scss";
 
 const PlanesComponent = () => {

@@ -17,7 +17,8 @@ export type TextColor =
   | "gray"
   | "white"
   | "black"
-  | "gray-200";
+  | "gray-200"
+  | "red";
 
 interface Props {
   textWeight?: TextWeight;

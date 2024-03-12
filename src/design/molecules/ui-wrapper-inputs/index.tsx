@@ -1,43 +1,47 @@
-import React, { useState } from "react";
-import TextComponent from "@design/atoms/ui-text";
-import InputComponent from "@design/atoms/ui-input";
+import React from "react";
+import TextComponent from "design/atoms/ui-text";
 import "./styles.scss";
-import { Controller } from "react-hook-form";
-
 interface Props {
   classParam?: string;
-  children: React.ReactNode
+  children: React.ReactNode;
+  errors?: string;
 }
 
 const WrapperInputs: React.FC<Props> = (props: Props) => {
-  const { classParam = "", children } = props;
+  const { classParam = "", children, errors = "" } = props;
   const childrenArray = React.Children.toArray(children);
 
   return (
-    <div className={`wrapper-inputs ${classParam}`}>
-      <div className="wrapper-inputs--content">
-        { childrenArray.length === 1? (
-          <div className="wrapper-inputs--content-single">
-            <TextComponent textColor="gray" textSize="small">
-              {"Celular"}
-            </TextComponent>
-            {childrenArray[0]}
-          </div>
-        ) : (
-          <>
-            <div className="wrapper-inputs--content-left">
+    <div className={`wrapper-inputs`}>
+      <div className={`wrapper-inputs--container ${classParam}`}>
+        <div className="wrapper-inputs--content">
+          {childrenArray.length === 1 ? (
+            <div className="wrapper-inputs--content-single">
+              <TextComponent textColor="gray" textSize="small">
+                {"Celular"}
+              </TextComponent>
               {childrenArray[0]}
             </div>
-            <div className="wrapper-inputs--content-right">
-              <TextComponent
-                textColor="gray"
-                textSize="small"
-              >{"Nro. de documento"}</TextComponent>
-              {childrenArray[1]}
-            </div>
-          </>
-        )}
+          ) : (
+            <>
+              <div className="wrapper-inputs--content-left">
+                {childrenArray[0]}
+              </div>
+              <div className="wrapper-inputs--content-right">
+                <TextComponent textColor="gray" textSize="small">
+                  {"Nro. de documento"}
+                </TextComponent>
+                {childrenArray[1]}
+              </div>
+            </>
+          )}
+        </div>
       </div>
+      {errors !== "" && (
+        <TextComponent classParam="mb-5" textColor="red" textSize="small">
+          {errors}
+        </TextComponent>
+      )}
     </div>
   );
 };

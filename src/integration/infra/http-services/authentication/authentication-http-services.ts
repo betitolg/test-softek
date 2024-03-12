@@ -2,8 +2,7 @@ import {
   HttpClient,
   HttpMethod,
   HttpRequest,
-  HttpResponse,
-} from "@integration/infra/http/http-client";
+} from "integration/infra/http/http-client";
 
 import { AuthenticationProvider } from "../../../../domains/softtek/authentication/providers/authentication.provider";
 

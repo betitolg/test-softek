@@ -1,7 +1,7 @@
 import React from "react";
-import BackButtonComponent from "@presentation/softek/pages/planes/components/back-button";
-import TextComponent from "@design/atoms/ui-text";
-import ProgressBarComponent from "@design/atoms/ui-progress-bar";
+import BackButtonComponent from "presentation/softek/pages/planes/components/back-button";
+import TextComponent from "design/atoms/ui-text";
+import ProgressBarComponent from "design/atoms/ui-progress-bar";
 import "./styles.scss";
 
 interface Props {

@@ -3,9 +3,9 @@ import {
   HttpMethod,
   HttpRequest,
   HttpResponse,
-} from "@integration/infra/http/http-client";
+} from "integration/infra/http/http-client";
 
-import { PlansProvider } from "@domains/softtek/plans/providers/plans.provider";
+import { PlansProvider } from "domains/softtek/plans/providers/plans.provider";
 
 export class PlansHttpService implements PlansProvider {
   constructor(private _httpClient: HttpClient) {}

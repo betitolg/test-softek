@@ -1,5 +1,5 @@
 import React from "react";
-import TextComponent from "@design/atoms/ui-text";
+import TextComponent from "design/atoms/ui-text";
 import "./styles.scss";
 
 interface Props {

@@ -1,7 +1,7 @@
 import React from "react";
-import TextComponent from "@design/atoms/ui-text";
-import BackArrowIcon from "@assets/svg/arrow_gray_back.svg";
-import NextArrowIcon from "@assets/svg/arrow_blue_next.svg";
+import TextComponent from "design/atoms/ui-text";
+import BackArrowIcon from "assets/svg/arrow_gray_back.svg";
+import NextArrowIcon from "assets/svg/arrow_blue_next.svg";
 import "./styles.scss";
 
 interface Props {

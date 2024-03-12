@@ -1,8 +1,14 @@
 .wrapper-inputs {
   width: 100%;
-  height: 56px;
-  border-radius: 8px;
-  border: 1px solid rgba(94, 100, 136, 1);
+  display: flex;
+  flex-direction: column;
+  
+  &--container {
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid rgba(94, 100, 136, 1);
+  }
 
   &--content{
     width: 100%;

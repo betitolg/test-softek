@@ -1,5 +1,4 @@
-import { HttpError } from "@infra/http/errors/http-error";
-import { AuthenticationRepository } from "@domains/softtek/authentication/repositories/authentication.repository";
+import { AuthenticationRepository } from "domains/softtek/authentication/repositories/authentication.repository";
 import { useQuery } from "react-query";
 
 export const useAuth = (repository: AuthenticationRepository) => {

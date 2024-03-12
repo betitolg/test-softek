@@ -3,12 +3,12 @@ import "./styles.scss";
 import LogoRimac from "assets/images/logo-rimac.png";
 import PhoneIcon from "assets/images/phone-icon.png";
 import LogoWhiteRimac from "assets/images/logo-white-rimac.png";
-import TextComponent from "@design/atoms/ui-text";
-import StepsComponent from "@design/molecules/ui-steps"
+import TextComponent from "design/atoms/ui-text";
+import StepsComponent from "design/molecules/ui-steps";
 import ImageBlurRight from "assets/images/blur-asset-right.png";
-import SeparatorComponent from "@design/atoms/ui-separator";
+import SeparatorComponent from "design/atoms/ui-separator";
 import ImageBlurRightMobile from "assets/images/blur-asset1-mobile.png";
-import BackButtonStepsComponent from "@design/molecules/ui-backbutton-steps"
+import BackButtonStepsComponent from "design/molecules/ui-backbutton-steps";
 type Props = {
   children?: ReactNode;
   noFooter?: boolean
